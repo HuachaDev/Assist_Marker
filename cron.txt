@@ -1,0 +1,4 @@
+58 6 * * 1 -5 /var/www/Assist_Marker/entrance.sh
+
+58 15 * * 1 -5 /var/www/Assist_Marker/exit.sh
+

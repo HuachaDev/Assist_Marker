@@ -1,0 +1,25 @@
+{
+  "name": "assist_marker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuachaDev/Assist_Marker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HuachaDev/Assist_Marker/issues"
+  },
+  "homepage": "https://github.com/HuachaDev/Assist_Marker#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "puppeteer": "^19.7.4"
+  }
+}
