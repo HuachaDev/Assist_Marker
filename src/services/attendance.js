@@ -22,6 +22,7 @@ router.get('/exit', async (req, res) => {
 
 
 async function attendance(text){
+    //Windows
     const browser = await puppeteer.launch({ headless: false })
     const page = await browser.newPage();
 
@@ -39,6 +40,19 @@ async function attendance(text){
     const btnSi = await page.waitForSelector('#btnsi');
     await btnSi.click(); 
     await browser.close();
+
+    /*
+
+    Linux
+    const browser = await puppeteer.launch({  headless: false,
+        executablePath : '/usr/bin/google-chrome' ,
+    args: [
+        '--no-sandbox',
+        '--start-maximized'
+    ],
+    ignoreHTTPSErrors: true});
+    //"puppeteer": "^17.1.3"
+    */
 }
 
 module.exports = router;
