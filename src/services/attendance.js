@@ -41,9 +41,7 @@ async function attendance(text){
     await btnSi.click(); 
     await browser.close();
 
-    /*
-
-    Linux
+    /*Linux
     const browser = await puppeteer.launch({  headless: false,
         executablePath : '/usr/bin/google-chrome' ,
     args: [
